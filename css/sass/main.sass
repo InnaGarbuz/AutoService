@@ -1,0 +1,990 @@
+@import "bourbon/bourbon"
+
+body
+	background: #000
+	font-family: 'Europe Normal', arial
+
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+form
+	text-align: center
+ul
+	list-style: none
+
+a
+	cursor: pointer
+
+.right
+	float: right
+
+.cont
+	width: 100%
+
+#before-load
+	position: fixed
+	left: 0
+	top: 0
+	right: 0
+	bottom: 0
+	background: #fff
+	z-index: 1001
+	i
+		font-size: 70px
+		position: absolute
+		left: 50%
+		top: 50%
+		margin: -35px 0 0 -35px
+
+
+.dm-overlay .dm-table .dm-cell .dm-modal
+	h1
+		text-align: center
+		color: #000
+	form
+		text-align: center
+		input
+			width: 68%
+			height: 35px
+			margin: 10px 0
+			padding: 20px
+			border: 2px solid #000
+			color: #000
+			background: #ffea00
+		input:hover
+			border: 2px solid #000
+			color: #a7a6a4
+			background: rgba(255, 255, 255, 0.71)
+			-webkit-transition: all .3s
+			-moz-transition: all .3s
+			-o-transition: all .3s
+			-ms-transition: all .3s
+			transition: all .3s
+		button
+			text-align: center
+			margin: 20px 0
+			width: 200px
+			padding: 14px 20px
+			border: none
+			background: rgb(0, 0, 0)
+			color: #e8e6c7
+			border-radius: 24px
+		button:hover
+			-webkit-transition: all .3s
+			-moz-transition: all .3s
+			-o-transition: all .3s
+			-ms-transition: all .3s
+			transition: all .3s
+			border: 1px solid #000
+			background: rgba(255, 255, 255, 0.71)
+			color: #000
+
+.reveal-modal-bg
+	position: fixed
+	height: 100%
+	width: 100%
+	background: #000
+	background: rgba(0,0,0,.8)
+	z-index: 100
+	display: none
+	top: 0
+	left: 0
+
+
+.reveal-modal
+	visibility: hidden
+	top: 100px
+	left: 50%
+	margin-left: -300px
+	width: 520px
+	background: #ffea00 url('../img/modal-gloss.png') no-repeat -200px -80px
+	position: absolute
+	z-index: 101
+	padding: 30px 40px 34px
+	-moz-border-radius: 5px
+	-webkit-border-radius: 5px
+	border-radius: 5px
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,.4)
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4)
+	-box-shadow: 0 0 10px rgba(0,0,0,.4)
+
+
+.reveal-modal.small
+	width: 200px
+	margin-left: -140px
+.reveal-modal.medium
+	width: 400px
+	margin-left: -240px
+.reveal-modal.large
+	width: 600px
+	margin-left: -340px
+.reveal-modal.xlarge
+	width: 800px
+	margin-left: -440px
+
+.reveal-modal .close-reveal-modal
+	font-size: 22px
+	line-height: .5
+	position: absolute
+	top: 8px
+	right: 11px
+	color: #000
+	text-shadow: 0 -1px 1px rbga(0,0,0,.6)
+	font-weight: bold
+	cursor: pointer
+
+.big-link
+	border: 3px solid #fff
+	border-radius: 20px
+	padding: 8px 30px
+	background: none
+	color: #fff
+	font-weight: bold
+	font-size: 18px
+
+.main_head
+	min-height: 620px
+	padding-top: 20px
+	display: none
+.top_wrapper
+	display: table
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	z-index: -1
+	.top_descr
+		display: table-row
+		.top_centered
+			display: table-cell
+			text-align: center
+			vertical-align: middle
+			.text_top
+				display: inline-block
+				-webkit-transform: rotate(-45deg)
+				-moz-transform: rotate(-45deg)
+				-o-transform: rotate(-45deg)
+				-ms-transform: rotate(-45deg)
+				transform: rotate(-45deg)
+			h1
+				display: inline-block
+				padding: 10px 50px
+				color: #fff
+				font-size: 3em
+				margin: -0.33em 0
+				+animation-delay(.8s)
+			p
+				color: #fff
+				font-size: 14px
+				font-weight: 600
+				text-transform: uppercase
+				+animation-delay(.8s)
+			span
+				font-size: 25px
+
+.blok_1
+	padding: 150px 0
+	background: url('../img/Block1/fon.jpg') no-repeat
+	width: 100%
+	background-size: cover
+	overflow: hidden
+
+	.bl_h3
+		h3
+			a
+				color: #6d6d6d
+				font-size: 25px
+				float: left
+				margin: 150px 50px 0
+			a:hover
+				color: #fff
+				cursor: pointer
+.opac_2
+	width: 50%
+	background: rgba(0, 0, 0, 0.89)
+	z-index: 2
+	height: 177px
+	float: right
+.g_imag1, .g_imag2, .g_imag3, .g_imag4, .g_imag5, .g_imag6, .g_imag7, .g_imag8
+	width: 100%
+	margin: 10px
+	z-index: 1
+	float: right
+	a
+		padding: 30px 10px
+		color: #fff
+		text-align: center
+		h5
+			color: #fff
+			font-size: 12px
+		p
+			border: 1px solid #fff
+			padding: 7px
+			border-radius: 30px
+			color: #fff
+			text-align: center
+
+.g_imag1
+	background: url('../img/Block1/1.jpg') no-repeat
+	width: 100%
+	margin: 10px
+	z-index: 1
+	float: right
+	a
+		padding: 30px 10px
+		color: #fff
+		text-align: center
+		h5
+			color: #fff
+			font-size: 12px
+		p
+			border: 1px solid #fff
+			padding: 3px
+			border-radius: 30px
+			color: #fff
+			text-align: center
+
+.g_imag2
+	background: url('../img/Block1/2.jpg') no-repeat
+	width: 100%
+	margin: 10px
+	z-index: 1
+	float: right
+	a
+		padding: 30px 10px
+		color: #fff
+		text-align: center
+		h5
+			color: #fff
+			font-size: 12px
+		p
+			border: 1px solid #fff
+			padding: 3px
+			border-radius: 30px
+			color: #fff
+			text-align: center
+
+.g_imag3
+	background: url('../img/Block1/3.png') no-repeat
+	width: 100%
+	margin: 10px
+	z-index: 1
+	float: right
+	a
+		padding: 30px 10px
+		color: #fff
+		text-align: center
+		h5
+			color: #fff
+			font-size: 12px
+		p
+			border: 1px solid #fff
+			padding: 3px
+			border-radius: 30px
+			color: #fff
+			text-align: center
+
+.g_imag4
+	background: url('../img/Block1/4.jpg') no-repeat
+	width: 100%
+	margin: 10px
+	z-index: 1
+	float: right
+	a
+		padding: 30px 10px
+		color: #fff
+		text-align: center
+		h5
+			color: #fff
+			font-size: 12px
+		p
+			border: 1px solid #fff
+			padding: 3px
+			border-radius: 30px
+			color: #fff
+			text-align: center
+
+.g_imag5
+	background: url('../img/Block1/5.jpg') no-repeat
+	width: 100%
+	margin: 10px
+	z-index: 1
+	float: right
+	a
+		padding: 30px 10px
+		color: #fff
+		text-align: center
+		h5
+			color: #fff
+			font-size: 12px
+		p
+			border: 1px solid #fff
+			padding: 3px
+			border-radius: 30px
+			color: #fff
+			text-align: center
+
+.g_imag6
+	background: url('../img/Block1/6.jpg') no-repeat
+	width: 100%
+	margin: 10px
+	z-index: 1
+	float: right
+	a
+		padding: 30px 10px
+		color: #fff
+		text-align: center
+		h5
+			color: #fff
+			font-size: 12px
+		p
+			border: 1px solid #fff
+			padding: 3px
+			border-radius: 30px
+			color: #fff
+			text-align: center
+
+.g_imag7
+	background: url('../img/Block1/7.jpg') no-repeat
+	width: 100%
+	margin: 10px
+	z-index: 1
+	float: right
+	a
+		padding: 30px 10px
+		color: #fff
+		text-align: center
+		h5
+			color: #fff
+			font-size: 12px
+		p
+			border: 1px solid #fff
+			padding: 3px
+			border-radius: 30px
+			color: #fff
+			text-align: center
+
+.g_imag8
+	background: url('../img/Block1/8.jpg') no-repeat
+	width: 100%
+	margin: 10px
+	z-index: 1
+	float: right
+	a
+		padding: 30px 10px
+		color: #fff
+		text-align: center
+		h5
+			color: #fff
+			font-size: 12px
+		p
+			border: 1px solid #fff
+			padding: 3px
+			border-radius: 30px
+			color: #fff
+			text-align: center
+
+
+.g_imag1:hover .opac, .g_imag2:hover .opac, .g_imag3:hover .opac, .g_imag4:hover .opac, .g_imag5:hover .opac, .g_imag6:hover .opac, .g_imag7:hover .opac, .g_imag8:hover .opac
+	width: 100%
+	background: rgba(0, 0, 0, 0.94)
+	z-index: 2
+	height: 177px
+	text-align: center
+	-moz-transition: all .3s linear
+	-o-transition: all .3s linear
+	-webkit-transition: all .3s linear
+.g_imag1:hover .opac_2, .g_imag2:hover .opac_2, .g_imag3:hover .opac_2, .g_imag4:hover .opac_2, .g_imag5:hover .opac_2, .g_imag6:hover .opac_2, .g_imag7:hover .opac_2, .g_imag8:hover .opac_2
+	width: 100%
+	background: rgba(0, 0, 0, 0.94)
+	z-index: 2
+	height: 177px
+	text-align: center
+	-moz-transition: all .3s linear
+	-o-transition: all .3s linear
+	-webkit-transition: all .3s linear
+
+
+.opac
+	width: 53%
+	background: rgba(0, 0, 0, 0.89)
+	z-index: 2
+	height: 177px
+
+
+
+
+.block_2
+	padding: 150px 0
+	background: url('../img/fon2.jpg') no-repeat
+	width: 100%
+	background-size: cover
+
+.blok_1
+	.header_text
+		h2
+			font-size: 40px
+			color: #fff
+			margin: 0
+			line-height: 1
+		p
+			color : #9c9999
+	.gallary_block
+		a
+			width: 125px
+			height: 177px
+			z-index: 0
+			position: relative
+			display: inline-block
+			text-decoration: none
+			cursor: pointer
+			img
+				margin: 5px 0
+				width: 250px
+				height: 177px
+				margin-right: 20px
+				position: relative
+				z-index: 1
+				span
+					display: none
+					width: 200px
+					position: absolute
+					top: 50%
+					left: 50%
+				img:hover span
+					display: block
+					border: 3px solid #e5e5e5
+					opacity: 0.9
+					background: #5d5d5d
+					z-index: 9
+					filter: alpha(opacity=90)
+
+
+
+.b2_gallery
+	.a_href
+		img
+			margin: 5px 0
+			height: 170px
+			border: none
+			border-radius: 30px
+			z-index: -99999
+		span
+			z-index: 99999
+			color: #fff
+			position: absolute
+			padding: 40px 20px
+			display: none
+		img:hover
+			webkit-box-shadow: 0px 1px 29px 0px rgba(177,227,246,1)
+			-moz-box-shadow: 0px 1px 29px 0px rgba(177,227,246,1)
+			box-shadow: 0px 1px 29px 0px rgba(177,227,246,1)
+			border: 5px solid #b1e4f6
+			border-radius:  11.5em 6em/0.5em 4em
+	img
+		height: 500px
+		width: 100%
+		padding: 7px
+		border-top-left-radius: 30px 60px
+		border-top-right-radius: 30px 60px
+		border-bottom-left-radius: 40px 40px
+		border-bottom-right-radius: 200px 100px
+
+.text_block, .text_block2, .text_block3, .text_block4, .text_block5, .text_block6
+	padding: 0 20px
+	h2
+		font-size: 40px
+		color: #fff
+		margin: 0
+		line-height: 1
+	p
+		color: #fff
+		margin: 40px 0
+		font-size: 15px
+	.btn_a
+		width: 300px
+		margin: 20px 0
+		a
+			border: 3px solid #fff
+			border-radius: 20px
+			padding: 8px 30px
+			background: none
+			color: #fff
+			font-weight: bold
+			font-size: 18px
+
+.text_block2
+	display: none
+.text_block3
+	display: none
+.text_block4
+	display: none
+.text_block5
+	display: none
+.text_block6
+	display: none
+
+.bnt_a
+	margin: 20px 0
+.block_3
+	padding: 150px 0
+	background: url('../img/Block3/fon.jpg') no-repeat
+	width: 100%
+	background-size: cover
+	.b_list
+		padding: 50px 0
+		.list
+			li
+				a
+					color: #22541c
+				a:hover
+					color: #fff
+		form
+			input
+				border: 0
+				border-bottom: 2px solid #40aa35
+				background: none
+				padding: 20px 20px 10px
+				text-align: left
+				color:  #40aa35
+				width: 300px
+				margin: 0 20px
+				border-radius: 1px
+			button
+				background: #40aa35
+				color: #000
+				padding: 10px 20px
+				width: 200px
+				border-radius: 20px
+				margin: 20px 50px
+				border: none
+	.b3_big_img
+		img
+			width: 80%
+
+.block4
+	padding: 150px 0
+	background: url('../img/aaaaa.jpg') no-repeat
+	width: 100%
+	background-size: cover
+	.b4_big_img
+		width: 100%
+		height: 540px
+		-webkit-box-shadow: 2px 2px 45px 4px rgba(100,84,170,1)
+		-moz-box-shadow: 2px 2px 45px 4px rgba(100,84,170,1)
+		box-shadow: 2px 2px 45px 4px rgba(100,84,170,1)
+		border: 5px solid #6454aa
+		border-radius: 14.5em 11em/2.5em 1em
+		img
+			width: 100%
+			height: 500px
+
+	.b4_text_img
+		.text_block
+			margin-bottom: 30px
+.blok_img
+	width: 100%
+	a
+		img
+			width: 100%
+			margin: 10px 0
+			border: 3px solid transparent
+			border-radius: 30px
+			z-index: -99999
+		span
+			z-index: 99999
+			color: #fff
+			position: absolute
+			padding: 40px 20px
+			display: none
+		img:hover
+			-webkit-box-shadow: 2px 2px 45px 4px rgba(100,84,170,1)
+			-moz-box-shadow: 2px 2px 45px 4px rgba(100,84,170,1)
+			box-shadow: 2px 2px 45px 4px rgba(100,84,170,1)
+			border: 5px solid #6454aa
+			border-radius:  0.5em 1em/0.5em 13em
+			border-radius:  0.5em 13em/0.5em 1em
+
+.block5
+	padding: 150px 0
+	background: url('../img/fon_blue.jpg') no-repeat
+	width: 100%
+	background-size: cover
+	.b5_big_img
+		img
+			width: 100%
+
+.block6
+	padding: 150px 0
+	background: url('../img/fon55555.jpg') no-repeat
+	width: 100%
+	background-size: cover
+	.b6_list
+		padding: 50px 0
+		.list
+			li
+				a
+					color: #441208
+				a:hover
+					color: #fff
+		form
+			input
+				border: 0
+				border-bottom: 2px solid #d40807
+				background: none
+				padding: 20px 20px 10px
+				text-align: left
+				color:  #d40807
+				width: 300px
+				margin: 0 20px
+				border-radius: 1px
+			button
+				background: #d40807
+				color: #000
+				padding: 10px 20px
+				width: 200px
+				border-radius: 20px
+				margin: 20px 50px
+				border: none
+	.b6_big_img
+		a
+			img
+				width: 100%
+
+
+.block7
+	padding: 150px 0
+	background: url('../img/lamp7.png')
+	width: 100%
+	background-size: cover
+
+.b7_list
+	form
+		.mark_auto
+			border: 0
+			border: 2px solid #ffbd09
+			background: none
+			padding: 10px 50px
+			text-align: center
+			color:  #ffbd09
+			margin: 0 20px
+			width: 100%
+			border-radius: 40px
+			-webkit-box-shadow: inset 1px 0px 12px -1px rgba(255,189,9,1)
+			-moz-box-shadow: inset 1px 0px 12px -1px rgba(255,189,9,1)
+			box-shadow: inset 1px 0px 12px -1px rgba(255,189,9,1)
+			option
+				border: 2px solid #ffbd09
+				background: none
+		input
+			border: 0
+			border-bottom: 2px solid #ffbd09
+			background: none
+			padding: 20px 50px
+			text-align: left
+			color:  #ffbd09
+			margin: 0 20px
+			width: 100%
+			border-radius: 1px
+		button
+			background: #ffbd09
+			color: #000
+			padding: 10px 20px
+			width: 200px
+			border-radius: 20px
+			margin: 20px 110px
+			border: none
+	.b7_big_img
+		a
+			img
+				width: 100%
+
+.block8
+	background: url('../img/ttt.jpg')
+	width: 100%
+	background-size: cover
+	position: relative
+	padding: 80px 0
+	.b8_big_img
+		a
+			img
+				width: 100%
+				height: 590px
+				webkit-box-shadow: 0px 1px 29px 0px rgba(177,227,246,1)
+				-moz-box-shadow: 0px 1px 29px 0px rgba(177,227,246,1)
+				box-shadow: 0px 1px 29px 0px rgba(177,227,246,1)
+				border: 5px solid #b1e4f6
+				border-radius:  0.5em 1em/0.5em 13em
+				border-radius:  0.5em 13em/0.5em 1em
+	.blok_img a
+		img
+			margin: 10px 0
+			border: 3px solid transparent
+			border-radius: 30px
+			z-index: -99999
+			span
+				z-index: 99999
+				color: #fff
+				position: absolute
+				padding: 40px 20px
+				display: none
+			img:hover
+				webkit-box-shadow: 0px 1px 29px 0px rgba(177,227,246,1)
+				-moz-box-shadow: 0px 1px 29px 0px rgba(177,227,246,1)
+				box-shadow: 0px 1px 29px 0px rgba(177,227,246,1)
+				border: 5px solid #b1e4f6
+				border-radius:  0.5em 1em/0.5em 13em
+				border-radius:  0.5em 13em/0.5em 1em
+
+
+
+.block9
+	padding: 180px 0
+	background: url('../img/lamp.png')
+	width: 100%
+	background-size: cover
+	.b3_list
+		form
+			.mark_auto
+				border: 0
+				border: 2px solid #ec6b0a
+				background: none
+				padding: 10px 50px
+				text-align: center
+				color:  #ec6b0a
+				margin: 0 20px
+				width: 400px
+				border-radius: 40px
+				-webkit-box-shadow: inset 1px 0px 12px -1px #ec6b0a
+				-moz-box-shadow: inset 1px 0px 12px -1px #ec6b0a
+				box-shadow: inset 1px 0px 12px -1px #ec6b0a
+				option
+					border: 2px solid #ec6b0a
+					background: none
+			input
+				border: 0
+				border-bottom: 2px solid #ec6b0a
+				background: none
+				padding: 20px 50px
+				text-align: left
+				color:  #ec6b0a
+				margin: 0 20px
+				width: 400px
+				border-radius: 1px
+			button
+				background: #ec6b0a
+				color: #000
+				padding: 10px 20px
+				width: 200px
+				border-radius: 20px
+				margin: 20px 110px
+				border: none
+
+.block10
+	padding: 150px 0
+	background: url('../img/car.jpg') no-repeat
+	width: 100%
+	height: 700px
+	background-size: cover
+	.fotm_contact
+		text-align: center
+		margin: 80px 0 0
+		.content
+			.logo
+				a
+					color: #fff
+					font-size: 30px
+			.p_block
+				p
+					color: #fff
+			form
+				input
+					border: 0
+					border: 2px solid #eee
+					background: none
+					padding: 10px 50px
+					text-align: center
+					color:  #eee
+					margin: 10px 20px
+					width: 350px
+					border-radius: 40px
+					-webkit-box-shadow: inset 1px 0px 12px -1px #eee
+					-moz-box-shadow: inset 1px 0px 12px -1px #eee
+					box-shadow: inset 1px 0px 12px -1px #eee
+				button
+					background: none
+					color: #fff
+					padding: 10px 20px
+					width: 200px
+					border-radius: 20px
+					margin: 20px 130px
+					border-radius: 40px
+					-webkit-box-shadow: inset 1px 0px 12px -1px #7c9cab
+					-moz-box-shadow: inset 1px 0px 12px -1px #7c9cab
+					box-shadow: inset 1px 0px 12px -1px #7c9cab
+
+
+.footer
+	padding: 20px 0
+	background: #000
+	width: 100%
+
+.logo
+	text-align: center
+	width: 65%
+	margin: auto
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+
+
+.logo b
+	font: 100 14px "Vibur"
+	color: #fee
+	text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000
+
+.logo b span
+	animation: blink linear infinite 2s
+
+@keyframes blink
+	78%
+		color: inherit
+		text-shadow: inherit
+	79%
+		color: #333
+	80%
+		text-shadow: none
+	81%
+		color: inherit
+		text-shadow: inherit
+	82%
+		color: #333
+		text-shadow: none
+	83%
+		color: inherit
+		text-shadow: inherit
+	92%
+		color: #333
+		text-shadow: none
+	92.5%
+		color: inherit
+		text-shadow: inherit
+
+
+// свечение
+
+
+*, :after, :before
+	box-sizing: border-box
+
+
+.neon-lit-background:before
+	content: ""
+	display: block
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background: #000
+	opacity: 0
+	transition: opacity .05s ease
+
+
+
+.neon-border
+	display: block
+	position: relative
+	margin-left: auto
+	margin-right: auto
+	text-align: center
+	z-index: 1
+	color: #fff
+	max-width: 100%
+	overflow: visible
+	width: 500px
+	border-radius:  0.5em 1em/0.5em 13em
+	border-radius:  0.5em 13em/0.5em 1em
+	height: 480px
+
+
+.neon-border--blue:before
+	box-shadow: 0 0 15px 4px #0080e2,0 0 120px 2px #004097,inset 0 0 15px 4px #0080e2,inset 0 0 100px 2px #004097
+	border-color: #bde1ff
+	border-radius:  0.5em 1em/0.5em 13em
+	border-radius:  0.5em 13em/0.5em 1em
+
+.neon-border--violet:before
+	box-shadow: 0 0 15px 4px #673ab7,0 0 120px 2px #673ab7,inset 0 0 15px 4px #673ab7,inset 0 0 100px 2px #673ab7
+	border-color: #673ab7
+	border-radius:  0.5em 1em/0.5em 13em
+	border-radius:  0.5em 13em/0.5em 1em
+
+.neon-border--azure:before
+	box-shadow: 0 0 15px 4px #00bcd4,0 0 120px 2px #00bcd4,inset 0 0 15px 4px #00bcd4,inset 0 0 100px 2px #00bcd4
+	border-color: #00bcd4#00bcd4
+	border-radius:  0.5em 1em/0.5em 13em
+	border-radius:  0.5em 13em/0.5em 1em
+
+.neon-border:before
+	content: ""
+	display: block
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	border: 2px solid #fff
+	border-radius: 8px
+	transition: opacity .05s ease
+	z-index: -1
+	border-radius:  0.5em 1em/0.5em 13em
+	border-radius:  0.5em 13em/0.5em 1em
+
+.text-glow.pink
+	color: #ffbde5
+	text-shadow: 0 0 10px #ed1cdc,0 0 20px #ed1cdc,0 0 30px #ed1cdc,0 0 40px #790072,0 0 70px #790072
+	font-family: 'Monoton'
+	font-size: 100px
+	border-radius:  0.5em 1em/0.5em 13em
+	border-radius:  0.5em 13em/0.5em 1em
+
+.cbg_big_ img
+	width: 370px
+	height: 481px
+	padding: 20px 10px
+
+.neon-lit-background--poweroff:before
+	opacity: .35
+
+
+.neon-border--poweroff:before
+	opacity: .25
+
+// modal
+
+
+
+//svg
+
+// svg
+//  display: block
+//  width: 624px
+//  height: 572px
+//  margin: 0 auto
+
+// polygon
+//  background: red
+
+
+// polygon:hover
+//  opacity: 0.5
+
+

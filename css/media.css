@@ -1,0 +1,277 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1600px) {
+    .slick-next{
+        right: -58px;
+    }
+
+.container-fluid{
+    padding: 0 150px
+}
+
+}
+@media only screen and (max-width : 1366px) {
+    .slick-next{
+        right: -25;
+    }
+
+.container-fluid{
+    padding: 0 20px
+}
+
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.container-fluid{
+    padding: 0 120px;
+}
+/*block_2 .container{
+    margin: 0 0px
+}
+
+
+*/
+.block6 .b6_list {
+    padding:  0;
+}
+
+.block6 .b6_list .list li a {
+    color: #c32a0c;
+}
+.block_3 .b3_list form input{
+    border-bottom: 2px solid #23651d;
+    color: #23651d;
+}
+.block_3{
+    background: url('../img/Block3/fon-mobi.jpg') repeat;
+    width: 100%;
+    background-size: cover;}
+}
+.block6{
+    background: url('../img/fon_red.jpg') repeat;
+    width: 100%;
+    background-size: cover;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    iframe{
+        height: 300px;
+    }
+.block9{
+    padding: 20px 0
+}
+header.header_top .logo a {
+  position: fixed;
+  top: 20px;
+  left: 10px;
+  z-index: 9;
+  font-weight: 300;
+  font-size: 17px;
+  color: #000;
+}
+
+.b3_list form .mark_auto, .b3_list form input{
+  width: 80%;
+
+}
+.b3_list form .mark_auto{
+padding: 10px 0;
+}
+.b3_list form button{
+  margin: 10px 30px;
+}
+
+.booking-form__heading{
+    display: none;
+}
+header.phone a {
+    position: fixed;
+    z-index: 9;
+    font-size: 12px;
+    top: 22px;
+    right: 18px;
+    height: 20px;
+    width: 200px;
+    color: #000;
+}
+
+.img-fill img {
+    min-height: 100%;
+    min-width: 100%;
+    width: 0;
+    position: relative;
+    display: inline-block;
+    max-width: none;
+}
+
+.header_text{
+    font-size: 15px
+}
+.container-fluid{
+    padding: 0 150px
+}
+.text_block, .booking-form{
+    margin: 20px 0
+}
+
+.list{
+    padding: 0 169px;
+}
+.block10{
+    padding: 80px 0 0;
+    background: url('../img/f_mobi.jpg') repeat;
+    width: 100%;
+    background-size: cover;
+}
+.Modern-Slider .item .img-fill{
+    display: none;
+}
+.main_head{
+    display: block;
+}
+.bl_h3{
+    display: none;
+}
+.block10 .fotm_contact .content form input{
+  width: 80%;
+}
+.block10 .fotm_contact .content form button{
+  margin: 10px 20px
+}
+.block6 .b6_list form input{
+  width: 80%;
+}
+.block1,.block2,.block3,.block4,.block5,.block6, .block7,.block8,.block9,.block10{
+  padding: 20px 0;
+}
+}
+
+@media only screen and (max-width : 600px) {
+    .list{
+    padding: 0 80px;}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .container-fluid{
+    padding: 0 0px
+}
+.list{
+    padding: 0 0px;
+}
+.block7 .b6_big_img form{
+
+
+}
+.block7 form button {
+    background: #ffbd09;
+    color: #000;
+    padding: 10px 8px;
+    width: 200px;
+    border-radius: 20px;
+    margin: 20px;
+    border: none;
+}
+
+.block7 form .mark_auto {
+    padding: 10px 8px;
+    width: 200px;
+
+}
+header .phone a {
+    position: fixed;
+    z-index: 9;
+    font-size: 13px;
+    top: 10px;
+    height: 20px;
+    width: 165px;
+    color: #000;
+    right: 0;
+}
+header.header_top input + label {
+    position: fixed;
+    top: 36px;
+    right: 24px;
+    height: 20px;
+    width: 24px;
+    z-index: 9;
+
+}
+header.header_top .logo a {
+    position: fixed;
+    top: 35px;
+    left: 10px;
+    z-index: 9;
+    font-weight: bold;
+}
+.text_block h2, .text_block2 h2, .text_block3 h2, .text_block4 h2, .text_block5 h2, .text_block6 h2 {
+    font-size: 30px;
+}
+.blok_1 .header_text h2 {
+font-size: 30px;
+}
+.dm-overlay .dm-table .dm-cell .dm-modal{
+  max-width: 19em;
+}
+.dm-overlay .dm-table .dm-cell .dm-modal h1 {
+    text-align: center;
+    color: #000;
+    font-size:  16px;
+    margin: 22px 0;
+}
+.dm-overlay .dm-table .dm-cell .dm-modal form button {
+    width: 165px;}
+}
+
+@media only screen and (max-width : 320px) {
+
+.container{
+   padding: 0;
+
+}
+#logo-link img {
+    width: 144px;
+    height: 23px;
+    margin: 27px 0 10px;
+}
+#nav-items-right {
+    float: right;
+    margin:  0;
+}
+.text_block h2{
+  font-size: 30px
+}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1366px) {
+}
+@media (max-width: 660px) { body { width: 100%; } }
